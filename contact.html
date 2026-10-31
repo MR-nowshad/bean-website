@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Bean Boutique</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body data-page="contact">
+  <div class="site-shell">
+    <header class="site-header"><a class="logo" href="index.html"><small>BEAN</small><span>☕ Coffee</span></a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="services.html">Services</a>
+        <a href="events.html">Events</a>
+        <a class="active" href="contact.html">Contact Us</a>
+        <a class="nav-cart" href="cart.html">Cart <span class="cart-count">0</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">We would love to hear from you</p>
+        <h1>Let's have a <em>coffee chat.</em></h1>
+        <p>Questions about our coffee, equipment or events? Send us a message.</p>
+      </section>
+
+      <section class="section contact-grid">
+        <form class="form-card" data-mailto-form data-subject="Message from Bean Boutique website">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Send us a message</h2>
+          <label for="contact-name">Your name</label>
+          <input id="contact-name" name="name" required>
+          <label for="contact-email">Email address</label>
+          <input id="contact-email" name="email" type="email" required>
+          <label for="contact-topic">What is it about?</label>
+          <select id="contact-topic" name="topic">
+            <option>Coffee selection</option>
+            <option>Brewing equipment</option>
+            <option>Events and workshops</option>
+            <option>Subscriptions</option>
+            <option>Other question</option>
+          </select>
+
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5" required></textarea>
+
+          <div class="form-trap" aria-hidden="true">
+            <label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label>
+          </div>
+
+          <label class="checkbox-line">
+            <input type="checkbox" required> I agree that my message can be used to reply to this enquiry.
+          </label>
+          <button class="button full-width" type="submit">Prepare email</button>
+        </form>
+
+        <div class="contact-side">
+          <article class="contact-info">
+            <p class="eyebrow">Visit the café</p>
+            <h2>Come say hello</h2>
+            <p><strong>Address:</strong> Add the café's real address here before publishing.</p>
+            <p><strong>Email:</strong> Add your official café email address.</p>
+            <p><strong>Opening hours:</strong><br>Update with confirmed opening times.</p>
+          </article>
+
+          <article class="widget-card">
+            <h2>Find us on the map</h2>
+            <p>The map below searches for Bean Boutique in Malta. Replace it with the café's exact address when known.
+            </p>
+
+            <div class="map-frame">
+              <iframe title="Map search for Bean Boutique in Malta"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.859840891885!2d14.473828144756292!3d35.92593057767442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e4561435a0f4b%3A0x3c0bed8e64806d6f!2sSTC%20Higher%20Education!5e0!3m2!1sen!2smt!4v1793056817042!5m2!1sen!2smt"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+              </iframe>"
+
+            </div>
+          </article>
+
+          <article class="widget-card">
+            <h2>Join our community</h2>
+            <p>Follow your café's official social account for new blends, event updates and community news.</p>
+            <a class="social-button" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Visit
+              Facebook</a>
+          </article>
+
+          <article class="widget-card security-card">
+            <h2>Security and privacy</h2>
+            <p><strong>Spam protection:</strong> the forms include required fields, browser email validation and a
+              hidden honeypot field to catch some simple bots.</p>
+            <p><strong>Privacy:</strong> this website does not collect payment-card details. For a real shop, we will
+              use HTTPS,
+              server-side validation, a privacy notice and a trusted payment provider. Now we have just a basic
+              deterrent, not full security.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="logo" href="index.html"><small>BEAN</small><span>☕ Coffee</span></a>
+        <p>Let's make time for good coffee.</p>
+        <div class="footer-links">
+          <a href="coffee.html">Coffee</a>
+          <a href="services.html">Services</a>
+          <a href="events.html">Events</a>
+          <a href="offers.html">Offers</a>
+        </div>
+      </div>
+      
+      <p class="copyright">© 2026 Bean Boutique. Crafted with care and a love for coffee.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

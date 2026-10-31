@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Selection | Bean Boutique</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body data-page="coffee">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="logo" href="index.html"><small>BEAN</small><span>☕ Coffee</span></a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="coffee.html">Coffee</a>
+        <a href="services.html">Services</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact Us</a>
+        <a class="nav-cart" href="cart.html">Cart <span class="cart-count">0</span></a>
+      </nav>
+    </header>
+
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Find your flavour</p>
+        <h1>Our <em>coffee</em></h1>
+        <p>Small-batch blends and single-origin coffees, with tasting notes to guide your next cup.</p>
+      </section>
+
+      <section class="section">
+        <div class="search-row">
+          <label class="search-label" for="product-search">Search coffee</label>
+          <input id="product-search" class="search-input" type="search"
+            placeholder="Try “chocolate”, “smooth” or “espresso”..." data-search>
+          <p class="search-hint" aria-live="polite">Start typing to find your perfect cup.</p>
+        </div>
+
+        <div class="product-grid" id="coffee-products">
+          <article class="product-card" data-product-card data-name="House Blend"
+            data-description="Balanced, smooth, caramel, chocolate, espresso filter" data-id="house-blend"
+            data-price="9.50">
+
+            <img src="images/19.jpg" alt="Roasted coffee beans">
+
+            <div class="product-body">
+              <p class="product-type">EVERYDAY FAVOURITE</p>
+              <h2>House Blend</h2>
+              <p>A balanced, easy-drinking blend for everyday brewing.</p>
+              <p class="tasting"><strong>Tasting notes:</strong> Caramel, milk chocolate, toasted nuts.</p>
+              <p class="tasting"><strong>Best brewed:</strong> Espresso or filter.</p>
+
+              <div class="product-bottom">
+                <strong>€9.50</strong>
+                <button class="button add-to-cart" type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-card data-name="Midnight Espresso"
+            data-description="Bold dark cocoa brown sugar espresso moka pot" data-id="midnight-espresso"
+            data-price="10.50">
+            <img src="images/16.webp" alt="Dark espresso coffee">
+
+            <div class="product-body">
+              <p class="product-type">BOLD & RICH</p>
+              <h2>Midnight Espresso</h2>
+              <p>A full-bodied roast made for a strong, satisfying shot.</p>
+              <p class="tasting"><strong>Tasting notes:</strong> Dark cocoa, brown sugar, spice.</p>
+              <p class="tasting"><strong>Best brewed:</strong> Espresso machine or moka pot.</p>
+
+              <div class="product-bottom">
+                <strong>€10.50</strong>
+                <button class="button add-to-cart" type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-card data-name="Sunrise Single Origin"
+            data-description="Bright citrus floral honey pour over filter" data-id="sunrise-origin" data-price="12.00">
+
+            <img src="images/17.webp" alt="Fresh coffee in a cup">
+
+            <div class="product-body">
+              <p class="product-type">SINGLE ORIGIN</p>
+              <h2>Sunrise Single Origin</h2>
+              <p>A lively coffee with a clean finish and bright aroma.</p>
+              <p class="tasting"><strong>Tasting notes:</strong> Citrus, soft florals, honey.</p>
+              <p class="tasting"><strong>Best brewed:</strong> Pour-over or filter.</p>
+              <div class="product-bottom">
+                <strong>€12.00</strong>
+                <button class="button add-to-cart" type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="product-card" data-product-card data-name="Velvet Decaf"
+            data-description="Smooth decaf cocoa biscuit French press filter" data-id="velvet-decaf" data-price="9.00">
+
+            <img src="images/18.webp" alt="Coffee served over ice">
+
+            <div class="product-body">
+              <p class="product-type">ALL THE COMFORT</p>
+              <h2>Velvet Decaf</h2>
+              <p>A gentle, smooth cup for evenings or slower moments.</p>
+              <p class="tasting"><strong>Tasting notes:</strong> Cocoa, biscuit, mellow sweetness.</p>
+              <p class="tasting"><strong>Best brewed:</strong> French press or filter.</p>
+
+              <div class="product-bottom">
+                <strong>€9.00</strong>
+                <button class="button add-to-cart" type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-search" hidden>No coffee matched that search. Try another word.</p>
+      </section>
+
+      <section class="offer-banner">
+        <div>
+          <p class="eyebrow light">Never run out</p>
+          <h2>Your favourites, delivered.</h2>
+          <p>Choose a subscription for regular coffee deliveries.</p>
+        </div>
+        <a class="button button-light" href="offers.html">See subscriptions</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="logo" href="index.html"><small>BEAN</small><span>☕ Coffee</span></a>
+        <p>Good beans. Better mornings.</p>
+        <div class="footer-links">
+          <a href="services.html">Brewing equipment</a>
+          <a href="events.html">Events</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <p class="copyright">© 2026 Bean Boutique. Crafted with care and a love for coffee.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

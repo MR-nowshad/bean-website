@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Special Offers & Subscriptions | Bean Boutique</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body data-page="offers">
+  <div class="site-shell">
+    <header class="site-header"><a class="logo" href="index.html"><small>BEAN</small><span>☕ Coffee</span></a><button
+        class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="services.html">Services</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact Us</a>
+        <a class="nav-cart" href="cart.html">Cart <span class="cart-count">0</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">A little something extra</p>
+        <h1>Offers & <em>subscriptions</em></h1>
+        <p>Make your favourite coffee part of your routine and save on regular deliveries.</p>
+      </section>
+
+      <section class="section">
+        <div class="promo-card">
+          <div>
+            <p class="eyebrow light">New customer offer</p>
+            <h2>Enjoy 15% off your first order</h2>
+            <p>Join our coffee list to hear about new roasts, seasonal favourites and café events.</p>
+          </div>
+          <a class="button button-light" href="index.html#signup">Sign-up offer on homepage</a>
+        </div>
+
+        <h2 class="center-heading">Choose your coffee plan</h2>
+        <div class="subscription-grid">
+          <article class="subscription-card">
+            <p class="product-type">A LITTLE TREAT</p>
+            <h2>Starter</h2>
+            <p class="plan-price">€9.50 <small>/ delivery</small></p>
+            <ul>
+              <li>One bag of House Blend</li>
+              <li>Delivered every month</li>
+              <li>Simple tasting guide</li>
+            </ul>
+            <button class="button subscribe-button" type="button" data-plan="Starter subscription">
+              Choose Starter
+            </button>
+          </article>
+
+          <article class="subscription-card featured-plan">
+            <p class="product-type">MOST POPULAR</p>
+            <h2>Daily Ritual</h2>
+            <p class="plan-price">€18.00 <small>/ delivery</small></p>
+
+            <ul>
+              <li>Two bags of selected coffee</li>
+              <li>Choose a roast preference</li>
+              <li>Early access to new blends</li>
+            </ul>
+            <button class="button subscribe-button" type="button" data-plan="Daily Ritual subscription">
+              Choose Daily Ritual
+            </button>
+          </article>
+
+          <article class="subscription-card">
+            <p class="product-type">FOR EXPLORERS</p>
+            <h2>Discovery</h2>
+            <p class="plan-price">€25.00 <small>/ delivery</small></p>
+            
+            <ul>
+              <li>Three rotating coffee bags</li>
+              <li>Single-origin discoveries</li>
+              <li>Brewing tips included</li>
+            </ul>
+            <button class="button subscribe-button" type="button" data-plan="Discovery subscription">
+              Choose Discovery
+            </button>
+          </article>
+        </div>
+      </section>
+      
+      <section class="section subscribe-form-section">
+        <form class="form-card" data-mailto-form data-subject="Bean Boutique subscription enquiry">
+          <p class="eyebrow">Interested?</p>
+          <h2>Ask about a subscription</h2>
+          <label for="sub-name">Your name</label>
+          <input id="sub-name" name="name" required>
+          <label for="sub-email">Email address</label>
+          <input id="sub-email" name="email" type="email" required>
+          <label for="sub-plan">Plan</label>
+          <select id="sub-plan" name="plan" required>
+            <option value="">Choose a plan</option>
+            <option>Starter</option>
+            <option>Daily Ritual</option>
+            <option>Discovery</option>
+          </select>
+
+          <div class="form-trap" aria-hidden="true">
+            <label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label>
+          </div>
+          <button class="button full-width" type="submit">Prepare enquiry email</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="logo" href="index.html"><small>BEAN</small><span>☕ Coffee</span></a>
+        <p>Better coffee, delivered thoughtfully.</p>
+        <div class="footer-links">
+          <a href="coffee.html">Coffee</a>
+          <a href="services.html">Services</a>
+          <a href="events.html">Events</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      <p class="copyright">© 2026 Bean Boutique. Crafted with care and a love for coffee.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

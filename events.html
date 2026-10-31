@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events & Workshops | Bean Boutique</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body data-page="events">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="logo" href="index.html"><small>BEAN</small><span>☕ Coffee</span></a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="events.html">Events</a>
+        <a href="contact.html">Contact Us</a>
+        <a class="nav-cart" href="cart.html">Cart <span class="cart-count">0</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Learn, taste, connect</p>
+        <h1>Come for coffee.<br><em>Stay for the people.</em></h1>
+        <p>Friendly sessions for curious beginners and experienced coffee fans.</p>
+      </section>
+      <section class="section event-layout">
+        <div class="event-list">
+          <article class="event-card">
+            <div class="event-date"><span>08</span><small>NOV</small></div>
+            
+            <div>
+              <p class="product-type">TASTING SESSION</p>
+              <h2>Discover Your Coffee Palate</h2>
+              <p>Compare flavour notes, learn how origin changes taste and find your new favourite.</p>
+              <p class="event-meta">Beginner friendly · 60 minutes</p>
+              <button class="button event-select" type="button"
+                data-event="Discover Your Coffee Palate">Register for this event</button>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="event-date"><span>15</span><small>NOV</small></div>
+
+            <div>
+              <p class="product-type">BREWING CLASS</p>
+              <h2>Better Coffee at Home</h2>
+              <p>Practise simple French press and pour-over techniques with our team.</p>
+              <p class="event-meta">Bring your questions · 75 minutes</p><button class="button event-select"
+                type="button" data-event="Better Coffee at Home">Register for this event</button>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="event-date"><span>22</span><small>NOV</small></div>
+
+            <div>
+              <p class="product-type">MEET THE ROASTER</p>
+              <h2>From Bean to Cup</h2>
+              <p>Explore roast levels, aroma and the small choices that shape a coffee's character.</p>
+              <p class="event-meta">Small group · 60 minutes</p><button class="button event-select" type="button"
+                data-event="From Bean to Cup">Register for this event</button>
+            </div>
+          </article>
+        </div>
+
+        <form class="form-card" id="event-form" data-mailto-form data-subject="Bean Boutique event registration">
+          <p class="eyebrow">Save your place</p>
+          <h2>Event registration</h2>
+          <p>Complete the form and your email app will prepare a registration message.</p>
+          <label for="event-name">Event</label>
+          <select id="event-name" name="event" required>
+            <option value="">Choose an event</option>
+            <option>Discover Your Coffee Palate</option>
+            <option>Better Coffee at Home</option>
+            <option>From Bean to Cup</option>
+          </select>
+
+          <div class="two-fields">
+            <div>
+              <label for="first-name">First name</label>
+              <input id="first-name" name="firstName" required>
+            </div>
+
+            <div>
+              <label for="last-name">Last name</label>
+              <input id="last-name" name="lastName" required>
+            </div>
+          </div>
+
+          <label for="event-email">Email address</label>
+          <input id="event-email" name="email" type="email" required placeholder="nowshad@gmail.com">
+          <div class="form-trap" aria-hidden="true">
+            <label>Leave this field empty
+              <input name="website" tabindex="-1" autocomplete="off"></label>
+            </div>
+
+          <button class="button full-width" type="submit">Prepare registration email</button>
+          <p class="fine-print">This demo does not send data automatically; it opens your email app.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="logo" href="index.html"><small>BEAN</small><span>☕ Coffee</span></a>
+        <p>Good coffee is even better together.</p>
+        <div class="footer-links">
+          <a href="coffee.html">Coffee</a>
+          <a href="services.html">Services</a>
+          <a href="offers.html">Offers</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      <p class="copyright">© 2026 Bean Boutique. Crafted with care and a love for coffee.</p>
+    </footer>
+  </div>
+</body>
+</html>
