@@ -52,7 +52,7 @@ button,
   background: var(--cream);
   box-shadow: 0 12px 50px #3b211622;
   min-height: 100vh;
-  
+
 }
 
 .site-header {
@@ -1049,14 +1049,23 @@ h1 em,
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .hero {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
     text-align: center;
   }
 
   .hero-copy {
-    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-copy p {
+    width: 100%;
+    max-width: 100%;
   }
 
   .button-row {
@@ -1064,7 +1073,21 @@ h1 em,
   }
 
   .slideshow {
-    height: 260px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .site-shell,
+  main {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero>*,
+  main>* {
+    min-width: 0;
   }
 
   .feature-strip {
