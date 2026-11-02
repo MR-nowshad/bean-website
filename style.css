@@ -52,10 +52,13 @@ button,
   background: var(--cream);
   box-shadow: 0 12px 50px #3b211622;
   min-height: 100vh;
-  overflow: hidden;
+  
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   min-height: 88px;
   padding: 16px clamp(18px, 5vw, 70px);
   display: flex;
