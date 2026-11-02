@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var body = "Hello Bean Boutique,%0D%0A%0D%0AI would like to enquire about this order:%0D%0A" +
         encodeURIComponent(orderLines.join("\n")) + "%0D%0A%0D%0ASubtotal: €" + total.toFixed(2) +
         "%0D%0A%0D%0APlease contact me to confirm availability and payment.";
-      message.textContent = "Your email app will open. Add the café's email address before using this on a live site.";
+      message.textContent = "Your email app will open.";
       window.location.href = "mailto:?subject=" + encodeURIComponent("Bean Boutique order enquiry") + "&body=" + body;
     });
   }
@@ -316,11 +316,9 @@ document.addEventListener("DOMContentLoaded", function () {
       data.forEach(function (value, key) {
         if (key !== "website") lines.push(key + ": " + value);
       });
-      var emailAddress = "REPLACE-WITH-CAFE-EMAIL@example.com";
+      var emailAddress = "mnowshad184@gmail.com";
       var mailto = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
-      if (emailAddress.indexOf("REPLACE-WITH") === 0) {
-        alert("Demo form: replace REPLACE-WITH-CAFE-EMAIL@example.com in script.js with the café's real email address. Your form details are ready to be sent through an email app.");
-      }
+      
       window.location.href = mailto;
     });
   });
